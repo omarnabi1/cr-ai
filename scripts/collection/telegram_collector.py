@@ -9,10 +9,10 @@ After that: runs silently via cron.
 Run: python3 scripts/collection/telegram_collector.py
 """
 
+import os, asyncio, json, logging, hashlib
+from pathlib import Path
 from dotenv import load_dotenv
 load_dotenv(Path(__file__).parent.parent.parent / '.env')
-
-import os, asyncio, json, logging, hashlib
 from datetime import datetime
 from pathlib import Path
 from telethon import TelegramClient
