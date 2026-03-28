@@ -10,7 +10,7 @@ Run: python3 scripts/collection/telegram_collector.py
 """
 
 from dotenv import load_dotenv
-load_dotenv('/Users/omarnabi/Desktop/CR-AI/.env')
+load_dotenv(Path(__file__).parent.parent.parent / '.env')
 
 import os, asyncio, json, logging, hashlib
 from datetime import datetime
@@ -21,7 +21,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s [%(levelname)s] %(message)s',
     handlers=[
-        logging.FileHandler('/Users/omarnabi/Desktop/CR-AI/logs/telegram.log'),
+        logging.FileHandler(str(Path(__file__).parent.parent.parent / 'logs' / 'telegram.log')),
         logging.StreamHandler()
     ]
 )
@@ -29,9 +29,9 @@ log = logging.getLogger(__name__)
 
 API_ID   = int(os.getenv('TELEGRAM_API_ID'))
 API_HASH = os.getenv('TELEGRAM_API_HASH')
-OUT_DIR  = Path('/Users/omarnabi/Desktop/CR-AI/data/raw/social_media')
+OUT_DIR  = Path(Path(__file__).parent.parent.parent / 'data' / 'raw' / 'social_media')
 OUT_DIR.mkdir(parents=True, exist_ok=True)
-SESSION  = '/Users/omarnabi/Desktop/CR-AI/logs/cr_ai_telegram'
+SESSION  = str(Path(__file__).parent.parent.parent / 'logs' / 'cr_ai_telegram')
 
 # ─── Verified channels ────────────────────────────────────────────────────────
 # All usernames confirmed working as of 2026-03-25

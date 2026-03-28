@@ -17,15 +17,15 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
-        logging.FileHandler("/Users/omarnabi/Desktop/CR-AI/logs/economic.log"),
+        logging.FileHandler(str(Path(__file__).parent.parent.parent / "logs" / "economic.log")),
         logging.StreamHandler()
     ]
 )
 log = logging.getLogger(__name__)
 
-ECON_DIR  = Path("/Users/omarnabi/Desktop/CR-AI/data/raw/economic_incentives")
-ILLICIT_DIR = Path("/Users/omarnabi/Desktop/CR-AI/data/raw/illicit_economy")
-MINERALS_DIR = Path("/Users/omarnabi/Desktop/CR-AI/data/raw/minerals")
+ECON_DIR  = Path(__file__).parent.parent.parent / "data" / "raw" / "economic_incentives"
+ILLICIT_DIR = Path(__file__).parent.parent.parent / "data" / "raw" / "illicit_economy"
+MINERALS_DIR = Path(__file__).parent.parent.parent / "data" / "raw" / "minerals"
 for d in [ECON_DIR, ILLICIT_DIR, MINERALS_DIR]:
     d.mkdir(parents=True, exist_ok=True)
 

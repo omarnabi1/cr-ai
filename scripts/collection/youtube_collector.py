@@ -18,13 +18,13 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
-        logging.FileHandler("/Users/omarnabi/Desktop/CR-AI/logs/youtube.log"),
+        logging.FileHandler(str(Path(__file__).parent.parent.parent / "logs" / "youtube.log")),
         logging.StreamHandler()
     ]
 )
 log = logging.getLogger(__name__)
 
-OUT_DIR = Path("/Users/omarnabi/Desktop/CR-AI/data/raw/social_media")
+OUT_DIR = Path(__file__).parent.parent.parent / "data" / "raw" / "social_media"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Internet Archive Advanced Search API — no key needed

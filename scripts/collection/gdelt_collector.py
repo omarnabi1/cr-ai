@@ -8,7 +8,7 @@ Docs: https://www.gdeltproject.org/
 """
 
 from dotenv import load_dotenv
-load_dotenv('/Users/omarnabi/Desktop/CR-AI/.env')
+load_dotenv(Path(__file__).parent.parent.parent / '.env')
 
 import requests, json, hashlib, logging, csv, io
 from datetime import datetime, timedelta
@@ -18,13 +18,13 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s [%(levelname)s] %(message)s',
     handlers=[
-        logging.FileHandler('/Users/omarnabi/Desktop/CR-AI/logs/gdelt.log'),
+        logging.FileHandler(str(Path(__file__).parent.parent.parent / 'logs' / 'gdelt.log')),
         logging.StreamHandler()
     ]
 )
 log = logging.getLogger(__name__)
 
-OUT_DIR = Path('/Users/omarnabi/Desktop/CR-AI/data/raw/geopolitical_lit')
+OUT_DIR = Path(__file__).parent.parent.parent / 'data' / 'raw' / 'geopolitical_lit'
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # ─── GDELT Doc API — article search ─────────────────────────────────────────

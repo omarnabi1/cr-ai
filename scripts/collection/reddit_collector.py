@@ -26,13 +26,13 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
-        logging.FileHandler("/Users/omarnabi/Desktop/CR-AI/logs/reddit.log"),
+        logging.FileHandler(str(Path(__file__).parent.parent.parent / "logs" / "reddit.log")),
         logging.StreamHandler()
     ]
 )
 log = logging.getLogger(__name__)
 
-OUT_DIR = Path("/Users/omarnabi/Desktop/CR-AI/data/raw/social_media")
+OUT_DIR = Path(__file__).parent.parent.parent / "data" / "raw" / "social_media"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 SUBREDDITS = [

@@ -11,7 +11,7 @@ ACLED/UCDP require keys — add to .env when available:
 """
 
 from dotenv import load_dotenv
-load_dotenv('/Users/omarnabi/Desktop/CR-AI/.env')
+load_dotenv(Path(__file__).parent.parent.parent / '.env')
 
 import os, json, hashlib, logging, requests
 from datetime import datetime
@@ -21,13 +21,13 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
-        logging.FileHandler("/Users/omarnabi/Desktop/CR-AI/logs/historical.log"),
+        logging.FileHandler(str(Path(__file__).parent.parent.parent / "logs" / "historical.log")),
         logging.StreamHandler()
     ]
 )
 log = logging.getLogger(__name__)
 
-OUT_DIR = Path("/Users/omarnabi/Desktop/CR-AI/data/raw/historical_conflicts")
+OUT_DIR = Path(__file__).parent.parent.parent / "data" / "raw" / "historical_conflicts"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 ACLED_KEY   = os.getenv("ACLED_API_KEY", "")

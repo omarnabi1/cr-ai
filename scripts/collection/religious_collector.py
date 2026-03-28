@@ -15,13 +15,13 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
-        logging.FileHandler("/Users/omarnabi/Desktop/CR-AI/logs/religious.log"),
+        logging.FileHandler(str(Path(__file__).parent.parent.parent / "logs" / "religious.log")),
         logging.StreamHandler()
     ]
 )
 log = logging.getLogger(__name__)
 
-OUT_DIR = Path("/Users/omarnabi/Desktop/CR-AI/data/raw/religious_texts")
+OUT_DIR = Path(__file__).parent.parent.parent / "data" / "raw" / "religious_texts"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Quran chapters most relevant to justice, conflict, peace, governance
