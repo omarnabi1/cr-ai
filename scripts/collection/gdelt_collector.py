@@ -7,12 +7,11 @@ Pulls events and articles related to Iran/Hormuz and Afghanistan.
 Docs: https://www.gdeltproject.org/
 """
 
-from dotenv import load_dotenv
-load_dotenv(Path(__file__).parent.parent.parent / '.env')
-
 import requests, json, hashlib, logging, csv, io
 from datetime import datetime, timedelta
 from pathlib import Path
+from dotenv import load_dotenv
+load_dotenv(Path(__file__).parent.parent.parent / '.env')
 
 logging.basicConfig(
     level=logging.INFO,
