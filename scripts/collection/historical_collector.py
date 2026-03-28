@@ -10,12 +10,11 @@ ACLED/UCDP require keys — add to .env when available:
   ACLED_API_KEY + ACLED_EMAIL → https://developer.acleddata.com (free)
 """
 
-from dotenv import load_dotenv
-load_dotenv(Path(__file__).parent.parent.parent / '.env')
-
 import os, json, hashlib, logging, requests
 from datetime import datetime
 from pathlib import Path
+from dotenv import load_dotenv
+load_dotenv(Path(__file__).parent.parent.parent / '.env')
 
 logging.basicConfig(
     level=logging.INFO,

@@ -30,14 +30,6 @@ jobs:
           mkdir -p data/raw/social_media logs
           python3 scripts/collection/telegram_collector.py
 
-      - name: Save updated session back to secret
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          REPO: ${{ github.repository }}
-        run: |
-          NEW_SESSION=$(base64 < logs/cr_ai_telegram.session)
-          gh secret set TELEGRAM_SESSION_B64 --body "$NEW_SESSION" --repo "$REPO"
-
       - name: Upload to HuggingFace
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
