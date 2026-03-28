@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0",
+  "created_at": "2026-03-28T03:29:30.528517",
+  "description": "CR-AI actor profile schema for conflict analysis",
+  "actor": {
+    "id": "str \u2014 unique identifier e.g. actor_iran_gov",
+    "name": "str \u2014 canonical name",
+    "aliases": [
+      "str \u2014 alternate names, abbreviations"
+    ],
+    "actor_type": [
+      "state_government",
+      "armed_non_state",
+      "international_org",
+      "regional_org",
+      "political_party",
+      "militia",
+      "terrorist_org",
+      "civil_society",
+      "corporate",
+      "individual_leader",
+      "diaspora_group"
+    ],
+    "country_of_origin": "ISO 3166-1 alpha-3",
+    "primary_conflict_role": [
+      "primary_party",
+      "secondary_party",
+      "mediator",
+      "spoiler",
+      "guarantor",
+      "proxy",
+      "bystander"
+    ],
+    "pilot_conflicts": [
+      "iran_hormuz",
+      "afghanistan"
+    ],
+    "background": {
+      "founding_year": "int or null",
+      "ideology": [
+        "str \u2014 e.g. Shia_Islamist, Pashtun_nationalism, secular_nationalist"
+      ],
+      "organizational_structure": "str",
+      "estimated_strength": "str \u2014 e.g. 350,000 active military",
+      "funding_sources": [
+        "str"
+      ],
+      "international_sponsors": [
+        "str \u2014 actor IDs"
+      ]
+    },
+    "positions": {
+      "description": "Public vs private position tracking \u2014 core to CR-AI analysis",
+      "public_position": {
+        "stated_goals": [
+          "str"
+        ],
+        "red_lines": [
+          "str \u2014 publicly declared non-negotiables"
+        ],
+        "stated_grievances": [
+          "str"
+        ],
+        "official_narrative": "str",
+        "last_updated": "ISO datetime",
+        "sources": [
+          "str \u2014 URLs or source IDs"
+        ]
+      },
+      "private_position": {
+        "estimated_actual_goals": [
+          "str"
+        ],
+        "known_flexibilities": [
+          "str \u2014 areas where actor may compromise"
+        ],
+        "internal_factions": [
+          "str \u2014 internal divisions affecting position"
+        ],
+        "backchannel_signals": [
+          "str \u2014 known informal communications"
+        ],
+        "confidence_level": [
+          "low",
+          "medium",
+          "high"
+        ],
+        "analyst_notes": "str",
+        "last_updated": "ISO datetime"
+      },
+      "position_gap_analysis": "str \u2014 narrative of public vs private divergence"
+    },
+    "incentive_structure": {
+      "core_interests": [
+        "str \u2014 fundamental needs driving behavior"
+      ],
+      "economic_incentives": [
+        "str"
+      ],
+      "security_incentives": [
+        "str"
+      ],
+      "political_incentives": [
+        "str"
+      ],
+      "cultural_religious_incentives": [
+        "str"
+      ],
+      "disincentives_to_peace": [
+        "str \u2014 what actor loses if conflict resolves"
+      ],
+      "spoiler_risk": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ]
+    },
+    "relationships": {
+      "allies": [
+        {
+          "actor_id": "str",
+          "relationship_type": "str",
+          "strength": "str"
+        }
+      ],
+      "adversaries": [
+        {
+          "actor_id": "str",
+          "relationship_type": "str",
+          "intensity": "str"
+        }
+      ],
+      "historical_agreements": [
+        {
+          "name": "str",
+          "year": "int",
+          "status": "str"
+        }
+      ]
+    },
+    "population_sentiment": {
+      "domestic_support_level": [
+        "very_low",
+        "low",
+        "moderate",
+        "high",
+        "very_high"
+      ],
+      "support_trend": [
+        "declining",
+        "stable",
+        "growing"
+      ],
+      "key_grievances_of_constituents": [
+        "str"
+      ],
+      "legitimacy_basis": [
+        "electoral",
+        "religious",
+        "military",
+        "traditional",
+        "performance"
+      ],
+      "sources": [
+        "str"
+      ]
+    },
+    "conflict_history": {
+      "previous_conflicts": [
+        "str \u2014 brief descriptions"
+      ],
+      "negotiation_track_record": "str",
+      "ceasefire_violations": "int or null",
+      "peace_agreement_adherence": "str"
+    },
+    "metadata": {
+      "data_quality": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "last_reviewed": "ISO datetime",
+      "contributing_analysts": [
+        "str"
+      ],
+      "open_questions": [
+        "str"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "version": "6",
+  "last_updated": "2026-03-25",
+  "collaborators": ["Claude", "Gemini", "DeepSeek", "GPT (x2)", "Perplexity (x2)"],
+  "scope": "Political and structural conflicts. Domestic/intimate violence out of scope unless structurally linked.",
+  "architecture": {
+    "unit_of_analysis": "Conflict instance (actor pairing + geography + time-bounded phase)",
+    "reasoning_threads": [
+      "Thread 1: Legal-institutional (Western/Liberal)",
+      "Thread 2: Sovereign-civilizational (Multipolar)",
+      "Thread 3: Incentive gap analysis",
+      "Thread 4: Human security (civilian experience)"
+    ],
+    "resolution_stack_layers": 9,
+    "intensity_vector_dimensions": ["lethality","duration","displacement","spillover","institutional_damage"],
+    "required_instance_fields": [
+      "instance_id","name","actors","geography","spatial_type","phase_tag",
+      "primary_driver","secondary_drivers","authority_map","population_sentiment",
+      "intensity_vector","structural_drivers"
+    ]
+  },
+  "ontological_kinds": {
+    "sc": "Structural condition",
+    "ar": "Arena",
+    "me": "Mechanism",
+    "co": "Configuration"
+  },
+  "structural_driver_registry": [
+    "racial_capitalism","patriarchy","coloniality","extractivism",
+    "settler_colonialism","caste_hierarchy","religious_nationalism",
+    "imperial_hegemony","climate_injustice","digital_colonialism",
+    "labor_exploitation","demographic_engineering","epistemic_violence"
+  ],
+  "conflict_type_count": 23,
+  "sub_type_count": 90,
+  "resolution_frameworks": 20,
+  "red_team_tests_passed": [
+    "Strait of Hormuz / Iran",
+    "Afghanistan 2001-2021"
+  ]
+}

@@ -1,0 +1,45 @@
+name: Daily Telegram Collection
+on:
+  schedule:
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+
+      - name: Restore Telegram session
+        env:
+          TELEGRAM_SESSION_B64: ${{ secrets.TELEGRAM_SESSION_B64 }}
+        run: |
+          mkdir -p logs
+          echo "$TELEGRAM_SESSION_B64" | base64 --decode > logs/cr_ai_telegram.session
+
+      - name: Run Telegram collector
+        env:
+          TELEGRAM_API_ID: ${{ secrets.TELEGRAM_API_ID }}
+          TELEGRAM_API_HASH: ${{ secrets.TELEGRAM_API_HASH }}
+        run: |
+          mkdir -p data/raw/social_media logs
+          python3 scripts/collection/telegram_collector.py
+
+      - name: Save updated session back to secret
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          NEW_SESSION=$(base64 < logs/cr_ai_telegram.session)
+          gh secret set TELEGRAM_SESSION_B64 --body "$NEW_SESSION" --repo "$REPO"
+
+      - name: Upload to HuggingFace
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_DATASET_REPO: ${{ secrets.HF_DATASET_REPO }}
+        run: python3 scripts/upload_to_hf.py
