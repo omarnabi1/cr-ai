@@ -1,0 +1,64 @@
+name: Expanded Data Collection — Full Universe
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+
+      - name: Run human dimensions collector
+        run: |
+          mkdir -p data/raw/human_dimensions logs
+          python3 -c "
+import sys; sys.path.insert(0, '.')
+from scripts.collection.expanded.human_dimensions_collector import run_human_dimensions
+run_human_dimensions()
+"
+      - name: Run structural historical collector
+        run: |
+          mkdir -p data/raw/structural_historical
+          python3 -c "
+import sys; sys.path.insert(0, '.')
+from scripts.collection.expanded.structural_historical_collector import run_structural_historical
+run_structural_historical()
+"
+      - name: Run systemic collector
+        run: |
+          mkdir -p data/raw/systemic
+          python3 -c "
+import sys; sys.path.insert(0, '.')
+from scripts.collection.expanded.systemic_collector import run_systemic
+run_systemic()
+"
+      - name: Run ground truth collector
+        run: |
+          mkdir -p data/raw/ground_truth
+          python3 -c "
+import sys; sys.path.insert(0, '.')
+from scripts.collection.expanded.ground_truth_collector import run_ground_truth
+run_ground_truth()
+"
+      - name: Upload all to HuggingFace
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_DATASET_REPO: ${{ secrets.HF_DATASET_REPO }}
+        run: python3 scripts/upload_to_hf.py
+
+      - name: Report record counts
+        run: |
+          echo "=== EXPANDED DATA COUNTS ==="
+          find data/raw -name "*.jsonl" | while read f; do
+            printf "  %5d  %s\n" "$(wc -l < $f)" "$(basename $f)"
+          done
+          echo ""
+          printf "  %5d  TOTAL\n" "$(find data/raw -name '*.jsonl' | xargs cat | wc -l)"
