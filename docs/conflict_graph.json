@@ -1,0 +1,384 @@
+{
+  "nodes": {
+    "iran_hormuz": {
+      "id": "iran_hormuz",
+      "name": "Iran / US — Hormuz & Nuclear Dispute",
+      "short_name": "Iran/Hormuz",
+      "region": "Middle East",
+      "actors": [
+        "Islamic Republic of Iran",
+        "United States",
+        "IRGC",
+        "Israel",
+        "Saudi Arabia",
+        "EU"
+      ],
+      "start_year": 1979,
+      "status": "active",
+      "score": {
+        "intensity": 65,
+        "stability": 72,
+        "resolution": 35,
+        "contagion": 78,
+        "alignment": 28,
+        "humanitarian": 58,
+        "economic": 82,
+        "composite": 58,
+        "status": "active",
+        "resolution_proximity": "intractable",
+        "game_state": {
+          "threat_level": 65,
+          "governance_actions": 1,
+          "peace_track": 35,
+          "spillover_chance": 0.78,
+          "diplomacy_cost": 7,
+          "civilian_toll": 58,
+          "budget_available": 27,
+          "composite": 58,
+          "status_color": "#D85A30"
+        }
+      },
+      "tags": [
+        "nuclear",
+        "sanctions",
+        "proxy",
+        "resource",
+        "strait"
+      ],
+      "rca_summary": "1953 CIA coup destroyed Iranian trust in West. Revolutionary state identity requires anti-Western posture. IRGC economic empire depends on sanctions-era illicit economy. Nuclear program is both deterrence and bargaining chip.",
+      "updated_at": "2026-03-29T06:26:14.572589"
+    },
+    "afghanistan": {
+      "id": "afghanistan",
+      "name": "Afghanistan — Taliban / IEA Governance Crisis",
+      "short_name": "Afghanistan",
+      "region": "Central Asia",
+      "actors": [
+        "Taliban/IEA",
+        "Hazara community",
+        "Pakistan/ISI",
+        "US/NATO",
+        "Afghanistan civil society",
+        "ISIS-K",
+        "Russia",
+        "China"
+      ],
+      "start_year": 1978,
+      "status": "active",
+      "score": {
+        "intensity": 55,
+        "stability": 91,
+        "resolution": 22,
+        "contagion": 68,
+        "alignment": 15,
+        "humanitarian": 94,
+        "economic": 88,
+        "composite": 60,
+        "status": "active",
+        "resolution_proximity": "intractable",
+        "game_state": {
+          "threat_level": 55,
+          "governance_actions": 1,
+          "peace_track": 22,
+          "spillover_chance": 0.68,
+          "diplomacy_cost": 8,
+          "civilian_toll": 94,
+          "budget_available": 18,
+          "composite": 60,
+          "status_color": "#D85A30"
+        }
+      },
+      "tags": [
+        "governance",
+        "ethnic",
+        "ideology",
+        "proxy",
+        "humanitarian",
+        "narco"
+      ],
+      "rca_summary": "1893 Durand Line created illegitimate border. 1979 Soviet invasion destroyed civil society. CIA mujahedeen funding created Taliban precursors. 20yr US occupation failed to build legitimate governance. Opium economy replaced all alternatives.",
+      "updated_at": "2026-03-29T06:26:14.573333"
+    },
+    "pakistan_isi": {
+      "id": "pakistan_isi",
+      "name": "Pakistan — Internal / ISI Proxy Strategy",
+      "short_name": "Pakistan/ISI",
+      "region": "South Asia",
+      "actors": [
+        "Pakistan Army",
+        "ISI",
+        "PTI",
+        "Taliban/TTP",
+        "India"
+      ],
+      "start_year": 1947,
+      "status": "active",
+      "score": {
+        "intensity": 52,
+        "stability": 74,
+        "resolution": 30,
+        "contagion": 70,
+        "alignment": 22,
+        "humanitarian": 55,
+        "economic": 65,
+        "composite": 51,
+        "status": "active",
+        "resolution_proximity": "intractable",
+        "game_state": {
+          "threat_level": 52,
+          "governance_actions": 1,
+          "peace_track": 30,
+          "spillover_chance": 0.7,
+          "diplomacy_cost": 8,
+          "civilian_toll": 55,
+          "budget_available": 52,
+          "composite": 51,
+          "status_color": "#D85A30"
+        }
+      },
+      "tags": [
+        "proxy",
+        "nuclear",
+        "governance",
+        "strategic_depth"
+      ],
+      "rca_summary": "Pakistan uses Taliban as strategic depth against India. ISI created and still maintains Taliban networks. Pakistan's own stability is hostage to Afghan stability.",
+      "updated_at": "2026-03-29T06:26:14.573337"
+    },
+    "yemen": {
+      "id": "yemen",
+      "name": "Yemen — Saudi-Iran Proxy War",
+      "short_name": "Yemen",
+      "region": "Middle East",
+      "actors": [
+        "Houthi (Iran-backed)",
+        "Saudi Arabia/UAE",
+        "Yemen government",
+        "US",
+        "UN"
+      ],
+      "start_year": 2014,
+      "status": "active",
+      "score": {
+        "intensity": 78,
+        "stability": 88,
+        "resolution": 40,
+        "contagion": 60,
+        "alignment": 32,
+        "humanitarian": 96,
+        "economic": 72,
+        "composite": 68,
+        "status": "high",
+        "resolution_proximity": "distant",
+        "game_state": {
+          "threat_level": 78,
+          "governance_actions": 1,
+          "peace_track": 40,
+          "spillover_chance": 0.6,
+          "diplomacy_cost": 7,
+          "civilian_toll": 96,
+          "budget_available": 42,
+          "composite": 68,
+          "status_color": "#D85A30"
+        }
+      },
+      "tags": [
+        "proxy",
+        "humanitarian",
+        "resource",
+        "sectarian"
+      ],
+      "rca_summary": "Iran funds Houthis as strategic pressure on Saudi southern flank. Yemen is the theater where Iran-Saudi cold war turns hot.",
+      "updated_at": "2026-03-29T06:26:14.573340"
+    },
+    "israel_palestine": {
+      "id": "israel_palestine",
+      "name": "Israel / Palestine",
+      "short_name": "Israel/Palestine",
+      "region": "Middle East",
+      "actors": [
+        "Israel",
+        "Hamas",
+        "Palestinian Authority",
+        "Iran",
+        "US",
+        "Hezbollah",
+        "Egypt",
+        "Jordan"
+      ],
+      "start_year": 1948,
+      "status": "active",
+      "score": {
+        "intensity": 88,
+        "stability": 82,
+        "resolution": 12,
+        "contagion": 85,
+        "alignment": 8,
+        "humanitarian": 90,
+        "economic": 60,
+        "composite": 61,
+        "status": "high",
+        "resolution_proximity": "intractable",
+        "game_state": {
+          "threat_level": 88,
+          "governance_actions": 1,
+          "peace_track": 12,
+          "spillover_chance": 0.85,
+          "diplomacy_cost": 9,
+          "civilian_toll": 90,
+          "budget_available": 60,
+          "composite": 61,
+          "status_color": "#D85A30"
+        }
+      },
+      "tags": [
+        "territorial",
+        "colonial",
+        "proxy",
+        "resource",
+        "religious"
+      ],
+      "rca_summary": "Iran uses Hamas and Hezbollah as pressure valves against Israel. Israel-Palestine resolution is prerequisite for any Iran deal.",
+      "updated_at": "2026-03-29T06:26:14.573343"
+    },
+    "ukraine_russia": {
+      "id": "ukraine_russia",
+      "name": "Ukraine — Russia Invasion",
+      "short_name": "Ukraine/Russia",
+      "region": "Eastern Europe",
+      "actors": [
+        "Russia",
+        "Ukraine",
+        "US/NATO",
+        "EU",
+        "China",
+        "Belarus"
+      ],
+      "start_year": 2022,
+      "status": "active",
+      "score": {
+        "intensity": 90,
+        "stability": 78,
+        "resolution": 18,
+        "contagion": 72,
+        "alignment": 20,
+        "humanitarian": 82,
+        "economic": 75,
+        "composite": 62,
+        "status": "high",
+        "resolution_proximity": "intractable",
+        "game_state": {
+          "threat_level": 90,
+          "governance_actions": 1,
+          "peace_track": 18,
+          "spillover_chance": 0.72,
+          "diplomacy_cost": 8,
+          "civilian_toll": 82,
+          "budget_available": 38,
+          "composite": 62,
+          "status_color": "#D85A30"
+        }
+      },
+      "tags": [
+        "territorial",
+        "great_power",
+        "proxy",
+        "resource",
+        "sovereignty"
+      ],
+      "rca_summary": "Russia-Ukraine conflict reshapes global arms flows, sanctions architecture, and energy markets — all of which directly affect Iran and Afghanistan.",
+      "updated_at": "2026-03-29T06:26:14.573423"
+    }
+  },
+  "edges": [
+    {
+      "source_id": "iran_hormuz",
+      "target_id": "yemen",
+      "edge_type": "proxy_war",
+      "weight": 0.85,
+      "direction": "source_to_target",
+      "description": "Iran funds, arms, and trains Houthi forces as strategic pressure on Saudi Arabia",
+      "rca_note": "Resolving Iran/Hormuz requires addressing Iran's proxy strategy — Yemen is central",
+      "game_effect": "Escalation in Iran raises Houthi attack probability by contagion_score × 0.85",
+      "evidence": [
+        "IRGC Quds Force arms supply routes",
+        "Houthi ballistic missile technology traces to Iran"
+      ]
+    },
+    {
+      "source_id": "iran_hormuz",
+      "target_id": "israel_palestine",
+      "edge_type": "proxy_war",
+      "weight": 0.8,
+      "direction": "source_to_target",
+      "description": "Iran funds Hamas and Hezbollah as anti-Israel strategic assets",
+      "rca_note": "No Iran nuclear deal possible while Iran-Israel proxy war is unresolved",
+      "game_effect": "Iran deal progress reduces Hamas/Hezbollah funding — affects Israel/Palestine stability",
+      "evidence": [
+        "Hamas October 7 attack planning involved IRGC",
+        "Hezbollah receives $700M/yr from Iran"
+      ]
+    },
+    {
+      "source_id": "pakistan_isi",
+      "target_id": "afghanistan",
+      "edge_type": "proxy_war",
+      "weight": 0.9,
+      "direction": "both",
+      "description": "Pakistan/ISI created, supported, and still maintains Taliban as strategic depth",
+      "rca_note": "Afghanistan cannot stabilize without Pakistan stopping Taliban sanctuary. Pakistan cannot reform without civilian control of ISI.",
+      "game_effect": "Pakistan stability score directly modifies Afghanistan resolution score by ±0.9",
+      "evidence": [
+        "Quetta Shura Taliban HQ in Pakistan",
+        "ISI payments to Taliban commanders documented"
+      ]
+    },
+    {
+      "source_id": "iran_hormuz",
+      "target_id": "afghanistan",
+      "edge_type": "shared_actor",
+      "weight": 0.55,
+      "direction": "both",
+      "description": "Iran hosts 3.5M Afghan refugees, supports anti-Taliban Hazara networks, shares drug trade border",
+      "rca_note": "Iran has leverage over Afghanistan Taliban through refugee flows and Hazara support",
+      "game_effect": "Iran stability affects Afghan refugee flows — humanitarian score impact 0.55",
+      "evidence": [
+        "Iran-Taliban border clashes 2023",
+        "Fatemiyoun Brigade (Iran-backed Afghan Shia fighters)"
+      ]
+    },
+    {
+      "source_id": "ukraine_russia",
+      "target_id": "iran_hormuz",
+      "edge_type": "arms_supply",
+      "weight": 0.7,
+      "direction": "both",
+      "description": "Russia-Iran arms trade: Iran supplies drones to Russia, Russia provides nuclear/missile tech to Iran",
+      "rca_note": "Ukraine war gives Iran geopolitical leverage — Russia needs Iran, reducing Western pressure effectiveness",
+      "game_effect": "Ukraine escalation raises Iran's strategic value, reduces resolution score by contagion × 0.70",
+      "evidence": [
+        "Shahed drone supplies confirmed",
+        "Russia-Iran strategic partnership 2023"
+      ]
+    },
+    {
+      "source_id": "israel_palestine",
+      "target_id": "iran_hormuz",
+      "edge_type": "diplomatic",
+      "weight": 0.75,
+      "direction": "source_to_target",
+      "description": "Any Iran nuclear deal requires Israeli security assurances — Israel has effective veto on US-Iran negotiations",
+      "rca_note": "Israel-Palestine resolution is partial prerequisite for Iran deal sustainability",
+      "game_effect": "Israel/Palestine resolution score must reach 40+ before Iran deal can reach 70+",
+      "evidence": [
+        "Israeli lobby opposition to JCPOA",
+        "Netanyahu opposition to Biden Iran negotiations"
+      ]
+    }
+  ],
+  "meta": {
+    "total_nodes": 6,
+    "total_edges": 6,
+    "generated_at": "2026-03-29T06:26:14.577487"
+  }
+}
