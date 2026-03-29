@@ -56,6 +56,38 @@ import sys; sys.path.insert(0, '.')
 from scripts.collection.expanded.non_western_collector import run_non_western
 run_non_western()
 "
+      - name: Run HDX/ReliefWeb/UN collector
+        run: |
+          mkdir -p data/raw/hdx_reliefweb logs
+          python3 -c "
+import sys; sys.path.insert(0, '.')
+from scripts.collection.expanded.hdx_reliefweb_collector import run_hdx_reliefweb
+run_hdx_reliefweb()
+"
+      - name: Run historical depth collector
+        run: |
+          mkdir -p data/raw/historical_depth
+          python3 -c "
+import sys; sys.path.insert(0, '.')
+from scripts.collection.expanded.historical_depth_collector import run_historical_depth
+run_historical_depth()
+"
+      - name: Run judicial/legal collector
+        run: |
+          mkdir -p data/raw/judicial_legal
+          python3 -c "
+import sys; sys.path.insert(0, '.')
+from scripts.collection.expanded.judicial_legal_collector import run_judicial_legal
+run_judicial_legal()
+"
+      - name: Run philosophy/ethics collector
+        run: |
+          mkdir -p data/raw/philosophy_ethics
+          python3 -c "
+import sys; sys.path.insert(0, '.')
+from scripts.collection.expanded.philosophy_ethics_collector import run_philosophy_ethics
+run_philosophy_ethics()
+"
       - name: Upload all to HuggingFace
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
