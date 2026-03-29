@@ -48,6 +48,14 @@ import sys; sys.path.insert(0, '.')
 from scripts.collection.expanded.ground_truth_collector import run_ground_truth
 run_ground_truth()
 "
+      - name: Run non-Western sources collector
+        run: |
+          mkdir -p data/raw/non_western_sources
+          python3 -c "
+import sys; sys.path.insert(0, '.')
+from scripts.collection.expanded.non_western_collector import run_non_western
+run_non_western()
+"
       - name: Upload all to HuggingFace
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
