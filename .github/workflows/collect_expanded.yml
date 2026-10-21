@@ -14,7 +14,8 @@ jobs:
         with:
           python-version: '3.11'
           cache: 'pip'
-      - run: pip install -r requirements.txt
+          cache-dependency-path: requirements-collect.txt
+      - run: pip install -r requirements-collect.txt
 
       - name: Run human dimensions collector
         run: |

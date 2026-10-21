@@ -1,0 +1,11 @@
+# Lightweight deps for the daily GitHub Actions collectors.
+# Kept separate from requirements.txt so CI never installs torch/whisper/training libs.
+requests>=2.32.0
+python-dotenv>=1.0.0
+feedparser>=6.0.0
+telethon>=1.36.0
+praw>=7.8.0
+zstandard>=0.21.0
+internetarchive>=3.3.0
+gdeltdoc>=1.4.0
+huggingface_hub>=0.23.0
