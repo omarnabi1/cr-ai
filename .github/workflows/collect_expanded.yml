@@ -20,75 +20,39 @@ jobs:
       - name: Run human dimensions collector
         run: |
           mkdir -p data/raw/human_dimensions logs
-          python3 -c "
-import sys; sys.path.insert(0, '.')
-from scripts.collection.expanded.human_dimensions_collector import run_human_dimensions
-run_human_dimensions()
-"
+          python3 -c "import sys; sys.path.insert(0, '.'); from scripts.collection.expanded.human_dimensions_collector import run_human_dimensions; run_human_dimensions()"
       - name: Run structural historical collector
         run: |
           mkdir -p data/raw/structural_historical
-          python3 -c "
-import sys; sys.path.insert(0, '.')
-from scripts.collection.expanded.structural_historical_collector import run_structural_historical
-run_structural_historical()
-"
+          python3 -c "import sys; sys.path.insert(0, '.'); from scripts.collection.expanded.structural_historical_collector import run_structural_historical; run_structural_historical()"
       - name: Run systemic collector
         run: |
           mkdir -p data/raw/systemic
-          python3 -c "
-import sys; sys.path.insert(0, '.')
-from scripts.collection.expanded.systemic_collector import run_systemic
-run_systemic()
-"
+          python3 -c "import sys; sys.path.insert(0, '.'); from scripts.collection.expanded.systemic_collector import run_systemic; run_systemic()"
       - name: Run ground truth collector
         run: |
           mkdir -p data/raw/ground_truth
-          python3 -c "
-import sys; sys.path.insert(0, '.')
-from scripts.collection.expanded.ground_truth_collector import run_ground_truth
-run_ground_truth()
-"
+          python3 -c "import sys; sys.path.insert(0, '.'); from scripts.collection.expanded.ground_truth_collector import run_ground_truth; run_ground_truth()"
       - name: Run non-Western sources collector
         run: |
           mkdir -p data/raw/non_western_sources
-          python3 -c "
-import sys; sys.path.insert(0, '.')
-from scripts.collection.expanded.non_western_collector import run_non_western
-run_non_western()
-"
+          python3 -c "import sys; sys.path.insert(0, '.'); from scripts.collection.expanded.non_western_collector import run_non_western; run_non_western()"
       - name: Run HDX/ReliefWeb/UN collector
         run: |
           mkdir -p data/raw/hdx_reliefweb logs
-          python3 -c "
-import sys; sys.path.insert(0, '.')
-from scripts.collection.expanded.hdx_reliefweb_collector import run_hdx_reliefweb
-run_hdx_reliefweb()
-"
+          python3 -c "import sys; sys.path.insert(0, '.'); from scripts.collection.expanded.hdx_reliefweb_collector import run_hdx_reliefweb; run_hdx_reliefweb()"
       - name: Run historical depth collector
         run: |
           mkdir -p data/raw/historical_depth
-          python3 -c "
-import sys; sys.path.insert(0, '.')
-from scripts.collection.expanded.historical_depth_collector import run_historical_depth
-run_historical_depth()
-"
+          python3 -c "import sys; sys.path.insert(0, '.'); from scripts.collection.expanded.historical_depth_collector import run_historical_depth; run_historical_depth()"
       - name: Run judicial/legal collector
         run: |
           mkdir -p data/raw/judicial_legal
-          python3 -c "
-import sys; sys.path.insert(0, '.')
-from scripts.collection.expanded.judicial_legal_collector import run_judicial_legal
-run_judicial_legal()
-"
+          python3 -c "import sys; sys.path.insert(0, '.'); from scripts.collection.expanded.judicial_legal_collector import run_judicial_legal; run_judicial_legal()"
       - name: Run philosophy/ethics collector
         run: |
           mkdir -p data/raw/philosophy_ethics
-          python3 -c "
-import sys; sys.path.insert(0, '.')
-from scripts.collection.expanded.philosophy_ethics_collector import run_philosophy_ethics
-run_philosophy_ethics()
-"
+          python3 -c "import sys; sys.path.insert(0, '.'); from scripts.collection.expanded.philosophy_ethics_collector import run_philosophy_ethics; run_philosophy_ethics()"
       - name: Upload all to HuggingFace
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
