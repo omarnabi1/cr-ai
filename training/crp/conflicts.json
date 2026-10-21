@@ -1,0 +1,548 @@
+[
+ {
+  "id": "iran_hormuz_2026",
+  "name": "Iran / US: nuclear program and Strait of Hormuz",
+  "as_of": "2026-03-01",
+  "region": "Middle East",
+  "status": "ongoing"
+ },
+ {
+  "id": "afghanistan_2026",
+  "name": "Afghanistan: Taliban governance and recognition",
+  "as_of": "2026-03-01",
+  "region": "Central Asia",
+  "status": "ongoing"
+ },
+ {
+  "id": "yemen_2026",
+  "name": "Yemen civil war and Red Sea shipping",
+  "as_of": "2026-03-01",
+  "region": "Middle East",
+  "status": "ongoing"
+ },
+ {
+  "id": "pakistan_ttp_2026",
+  "name": "Pakistan and the TTP insurgency",
+  "as_of": "2026-03-01",
+  "region": "South Asia",
+  "status": "ongoing"
+ },
+ {
+  "id": "israel_palestine_2026",
+  "name": "Israel and Palestine after the Gaza war",
+  "as_of": "2026-03-01",
+  "region": "Middle East",
+  "status": "ongoing"
+ },
+ {
+  "id": "ukraine_russia_2026",
+  "name": "Russia's war in Ukraine",
+  "as_of": "2026-03-01",
+  "region": "Europe",
+  "status": "ongoing"
+ },
+ {
+  "id": "sudan_2025",
+  "name": "Sudan: SAF versus RSF",
+  "as_of": "2025-06-01",
+  "region": "Africa",
+  "status": "ongoing"
+ },
+ {
+  "id": "drc_m23_2025",
+  "name": "Eastern DRC and the M23",
+  "as_of": "2025-06-01",
+  "region": "Africa",
+  "status": "ongoing"
+ },
+ {
+  "id": "myanmar_2025",
+  "name": "Myanmar civil war after the coup",
+  "as_of": "2025-06-01",
+  "region": "Southeast Asia",
+  "status": "ongoing"
+ },
+ {
+  "id": "sahel_2025",
+  "name": "Sahel insurgencies and military juntas",
+  "as_of": "2025-06-01",
+  "region": "Africa",
+  "status": "ongoing"
+ },
+ {
+  "id": "ethiopia_tigray_2022",
+  "name": "Ethiopia: Tigray war",
+  "as_of": "2022-09-01",
+  "region": "Africa",
+  "status": "ended"
+ },
+ {
+  "id": "ethiopia_nile_gerd",
+  "name": "Ethiopia, Egypt, Sudan: the GERD dam dispute",
+  "as_of": "2024-01-01",
+  "region": "Africa",
+  "status": "ongoing"
+ },
+ {
+  "id": "kashmir",
+  "name": "India and Pakistan: Kashmir",
+  "as_of": "2024-01-01",
+  "region": "South Asia",
+  "status": "ongoing"
+ },
+ {
+  "id": "taiwan_strait",
+  "name": "China and Taiwan: cross-strait tensions",
+  "as_of": "2025-01-01",
+  "region": "East Asia",
+  "status": "ongoing"
+ },
+ {
+  "id": "south_china_sea",
+  "name": "South China Sea maritime disputes",
+  "as_of": "2025-01-01",
+  "region": "East Asia",
+  "status": "ongoing"
+ },
+ {
+  "id": "korea",
+  "name": "The Korean peninsula",
+  "as_of": "2025-01-01",
+  "region": "East Asia",
+  "status": "ongoing"
+ },
+ {
+  "id": "armenia_azerbaijan_2023",
+  "name": "Armenia and Azerbaijan: Nagorno-Karabakh",
+  "as_of": "2023-08-01",
+  "region": "Caucasus",
+  "status": "ended"
+ },
+ {
+  "id": "syria_2024",
+  "name": "Syria after Assad",
+  "as_of": "2025-01-01",
+  "region": "Middle East",
+  "status": "ongoing"
+ },
+ {
+  "id": "libya_2020",
+  "name": "Libya: rival governments",
+  "as_of": "2020-09-01",
+  "region": "Africa",
+  "status": "ongoing"
+ },
+ {
+  "id": "haiti_2024",
+  "name": "Haiti: gang rule and state collapse",
+  "as_of": "2024-06-01",
+  "region": "Americas",
+  "status": "ongoing"
+ },
+ {
+  "id": "venezuela_2019",
+  "name": "Venezuela: rival presidencies",
+  "as_of": "2019-03-01",
+  "region": "Americas",
+  "status": "ongoing"
+ },
+ {
+  "id": "colombia_2012",
+  "name": "Colombia and the FARC",
+  "as_of": "2012-08-01",
+  "region": "Americas",
+  "status": "resolved"
+ },
+ {
+  "id": "northern_ireland_1997",
+  "name": "Northern Ireland: the Troubles",
+  "as_of": "1997-09-01",
+  "region": "Europe",
+  "status": "resolved"
+ },
+ {
+  "id": "aceh_2004",
+  "name": "Aceh and the Indonesian government",
+  "as_of": "2004-12-30",
+  "region": "Southeast Asia",
+  "status": "resolved"
+ },
+ {
+  "id": "mozambique_1990",
+  "name": "Mozambique: FRELIMO and RENAMO",
+  "as_of": "1990-07-01",
+  "region": "Africa",
+  "status": "resolved"
+ },
+ {
+  "id": "bougainville_1997",
+  "name": "Bougainville and Papua New Guinea",
+  "as_of": "1997-07-01",
+  "region": "Pacific",
+  "status": "resolved"
+ },
+ {
+  "id": "sierra_leone_1999",
+  "name": "Sierra Leone civil war",
+  "as_of": "1999-05-01",
+  "region": "Africa",
+  "status": "resolved"
+ },
+ {
+  "id": "south_africa_1990",
+  "name": "South Africa: ending apartheid",
+  "as_of": "1990-02-01",
+  "region": "Africa",
+  "status": "resolved"
+ },
+ {
+  "id": "el_salvador_1990",
+  "name": "El Salvador civil war",
+  "as_of": "1990-04-01",
+  "region": "Americas",
+  "status": "resolved"
+ },
+ {
+  "id": "guatemala_1994",
+  "name": "Guatemala civil war",
+  "as_of": "1994-01-01",
+  "region": "Americas",
+  "status": "resolved"
+ },
+ {
+  "id": "bosnia_1995",
+  "name": "Bosnia and Herzegovina war",
+  "as_of": "1995-08-01",
+  "region": "Europe",
+  "status": "resolved"
+ },
+ {
+  "id": "kosovo_1999",
+  "name": "Kosovo",
+  "as_of": "1999-01-15",
+  "region": "Europe",
+  "status": "resolved"
+ },
+ {
+  "id": "cuban_missile_1962",
+  "name": "The Cuban Missile Crisis",
+  "as_of": "1962-10-20",
+  "region": "Americas",
+  "status": "resolved"
+ },
+ {
+  "id": "camp_david_1978",
+  "name": "Egypt and Israel before Camp David",
+  "as_of": "1978-08-01",
+  "region": "Middle East",
+  "status": "resolved"
+ },
+ {
+  "id": "oslo_1993",
+  "name": "Israel and the PLO before Oslo",
+  "as_of": "1993-01-01",
+  "region": "Middle East",
+  "status": "partial"
+ },
+ {
+  "id": "good_friday_1998",
+  "name": "Northern Ireland multi-party talks",
+  "as_of": "1998-03-01",
+  "region": "Europe",
+  "status": "resolved"
+ },
+ {
+  "id": "east_timor_1999",
+  "name": "East Timor and Indonesia",
+  "as_of": "1999-05-01",
+  "region": "Southeast Asia",
+  "status": "resolved"
+ },
+ {
+  "id": "sri_lanka_2002",
+  "name": "Sri Lanka and the LTTE",
+  "as_of": "2002-01-01",
+  "region": "South Asia",
+  "status": "failed"
+ },
+ {
+  "id": "nepal_2005",
+  "name": "Nepal: the Maoist insurgency",
+  "as_of": "2005-11-01",
+  "region": "South Asia",
+  "status": "resolved"
+ },
+ {
+  "id": "mindanao_2012",
+  "name": "Mindanao: the MILF and the Philippines",
+  "as_of": "2012-09-01",
+  "region": "Southeast Asia",
+  "status": "resolved"
+ },
+ {
+  "id": "liberia_2003",
+  "name": "Liberia civil war",
+  "as_of": "2003-06-01",
+  "region": "Africa",
+  "status": "resolved"
+ },
+ {
+  "id": "burundi_1998",
+  "name": "Burundi civil war",
+  "as_of": "1998-06-01",
+  "region": "Africa",
+  "status": "resolved"
+ },
+ {
+  "id": "rwanda_1993",
+  "name": "Rwanda before Arusha",
+  "as_of": "1993-01-01",
+  "region": "Africa",
+  "status": "failed"
+ },
+ {
+  "id": "south_sudan_2013",
+  "name": "South Sudan civil war",
+  "as_of": "2015-06-01",
+  "region": "Africa",
+  "status": "partial"
+ },
+ {
+  "id": "iraq_2006",
+  "name": "Iraq: sectarian civil war",
+  "as_of": "2006-12-01",
+  "region": "Middle East",
+  "status": "partial"
+ },
+ {
+  "id": "lebanon_1989",
+  "name": "Lebanon civil war before Taif",
+  "as_of": "1989-08-01",
+  "region": "Middle East",
+  "status": "resolved"
+ },
+ {
+  "id": "cyprus_2004",
+  "name": "Cyprus and the Annan Plan",
+  "as_of": "2004-03-01",
+  "region": "Europe",
+  "status": "failed"
+ },
+ {
+  "id": "basque_2010",
+  "name": "The Basque conflict and ETA",
+  "as_of": "2010-09-01",
+  "region": "Europe",
+  "status": "resolved"
+ },
+ {
+  "id": "chechnya_1996",
+  "name": "First Chechen war",
+  "as_of": "1996-07-01",
+  "region": "Caucasus",
+  "status": "partial"
+ },
+ {
+  "id": "georgia_2008",
+  "name": "Russia and Georgia, 2008",
+  "as_of": "2008-08-09",
+  "region": "Caucasus",
+  "status": "partial"
+ },
+ {
+  "id": "iran_iraq_1987",
+  "name": "Iran–Iraq war",
+  "as_of": "1987-07-01",
+  "region": "Middle East",
+  "status": "resolved"
+ },
+ {
+  "id": "falklands_1982",
+  "name": "The Falklands crisis",
+  "as_of": "1982-04-05",
+  "region": "Americas",
+  "status": "ended"
+ },
+ {
+  "id": "berlin_1961",
+  "name": "Berlin crisis",
+  "as_of": "1961-08-01",
+  "region": "Europe",
+  "status": "partial"
+ },
+ {
+  "id": "suez_1956",
+  "name": "The Suez crisis",
+  "as_of": "1956-10-25",
+  "region": "Middle East",
+  "status": "ended"
+ },
+ {
+  "id": "india_partition_1947",
+  "name": "Partition of India",
+  "as_of": "1947-04-01",
+  "region": "South Asia",
+  "status": "ended"
+ },
+ {
+  "id": "vietnam_1972",
+  "name": "Vietnam before the Paris Peace Accords",
+  "as_of": "1972-10-01",
+  "region": "Southeast Asia",
+  "status": "partial"
+ },
+ {
+  "id": "dayton_1995",
+  "name": "Bosnia: the Dayton talks",
+  "as_of": "1995-10-31",
+  "region": "Europe",
+  "status": "resolved"
+ },
+ {
+  "id": "eritrea_ethiopia_2018",
+  "name": "Eritrea and Ethiopia border war",
+  "as_of": "2018-06-01",
+  "region": "Africa",
+  "status": "resolved"
+ },
+ {
+  "id": "tajikistan_1996",
+  "name": "Tajikistan civil war",
+  "as_of": "1996-12-01",
+  "region": "Central Asia",
+  "status": "resolved"
+ },
+ {
+  "id": "angola_2001",
+  "name": "Angola civil war",
+  "as_of": "2001-12-01",
+  "region": "Africa",
+  "status": "resolved"
+ },
+ {
+  "id": "western_sahara",
+  "name": "Western Sahara",
+  "as_of": "2024-01-01",
+  "region": "Africa",
+  "status": "ongoing"
+ },
+ {
+  "id": "kurdish_turkey_2013",
+  "name": "Turkey and the PKK peace process",
+  "as_of": "2013-03-01",
+  "region": "Middle East",
+  "status": "failed"
+ },
+ {
+  "id": "tibet",
+  "name": "Tibet and the Chinese government",
+  "as_of": "2024-01-01",
+  "region": "East Asia",
+  "status": "ongoing"
+ },
+ {
+  "id": "rohingya_2017",
+  "name": "The Rohingya crisis",
+  "as_of": "2017-10-01",
+  "region": "Southeast Asia",
+  "status": "ongoing"
+ },
+ {
+  "id": "uyghur_xinjiang",
+  "name": "Xinjiang",
+  "as_of": "2024-01-01",
+  "region": "East Asia",
+  "status": "ongoing"
+ },
+ {
+  "id": "transnistria",
+  "name": "Moldova and Transnistria",
+  "as_of": "2024-01-01",
+  "region": "Europe",
+  "status": "frozen"
+ },
+ {
+  "id": "somalia_2024",
+  "name": "Somalia and al-Shabaab",
+  "as_of": "2024-01-01",
+  "region": "Africa",
+  "status": "ongoing"
+ },
+ {
+  "id": "nigeria_boko_haram",
+  "name": "Nigeria and Boko Haram",
+  "as_of": "2024-01-01",
+  "region": "Africa",
+  "status": "ongoing"
+ },
+ {
+  "id": "mexico_cartels",
+  "name": "Mexico's cartel violence",
+  "as_of": "2024-01-01",
+  "region": "Americas",
+  "status": "ongoing"
+ },
+ {
+  "id": "papua",
+  "name": "Papua and Indonesia",
+  "as_of": "2024-01-01",
+  "region": "Southeast Asia",
+  "status": "ongoing"
+ },
+ {
+  "id": "arctic_2035",
+  "name": "Arctic sea routes and seabed claims, 2035 (hypothetical)",
+  "as_of": "2035-01-01",
+  "region": "Arctic",
+  "status": "hypothetical"
+ },
+ {
+  "id": "nile_2035",
+  "name": "Nile water allocation in a drought, 2035 (hypothetical)",
+  "as_of": "2035-01-01",
+  "region": "Africa",
+  "status": "hypothetical"
+ },
+ {
+  "id": "indus_2035",
+  "name": "Indus waters under climate stress, 2035 (hypothetical)",
+  "as_of": "2035-01-01",
+  "region": "South Asia",
+  "status": "hypothetical"
+ },
+ {
+  "id": "mekong_2035",
+  "name": "Mekong dams and the delta, 2035 (hypothetical)",
+  "as_of": "2035-01-01",
+  "region": "Southeast Asia",
+  "status": "hypothetical"
+ },
+ {
+  "id": "space_debris_2040",
+  "name": "Orbital debris and satellite collisions, 2040 (hypothetical)",
+  "as_of": "2040-01-01",
+  "region": "Global",
+  "status": "hypothetical"
+ },
+ {
+  "id": "labor_port_strike",
+  "name": "A national port workers' strike and the government",
+  "as_of": "2024-01-01",
+  "region": "Generic",
+  "status": "generic"
+ },
+ {
+  "id": "water_rights_valley",
+  "name": "Farmers, a city and a tribe sharing one river (generic)",
+  "as_of": "2024-01-01",
+  "region": "Generic",
+  "status": "generic"
+ },
+ {
+  "id": "land_dispute_mine",
+  "name": "A mining company, a village and the state over land (generic)",
+  "as_of": "2024-01-01",
+  "region": "Generic",
+  "status": "generic"
+ }
+]
